@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background: url('../images/background.png') no-repeat center center fixed;
+    background-size: 50px;
+    font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 20px auto;
+    background: url('../images/surface.jpg') no-repeat center center;
+    background-size: 50px;
+    overflow: hidden;
+}
+
+.bug, .bug2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.bug:hover, .bug2:hover {
+    transform: scale(1.1);
+}
+
+.smashed {
+    animation: disappear 0.3s forwards;
+}
+
+@keyframes disappear {
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}

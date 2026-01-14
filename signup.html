@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bug Smash – Sign up</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<h1>Bug Smash</h1>
+
+<div class="authCard">
+  <h2>Sign up</h2>
+
+  <div class="authRow">
+    <label for="su_name">Username</label>
+    <input id="su_name" placeholder="Enter your username" autocomplete="off">
+
+    <label for="su_pass">Password</label>
+    <input id="su_pass" type="password" placeholder="Create a password" autocomplete="off">
+  </div>
+
+  <div style="margin-top: 26px; display: flex; justify-content: flex-end; gap: 12px; flex-wrap: wrap;">
+    <button id="su_btn">Create account</button>
+    <a href="/signin" class="kzBtnLinkButton">Already have an account? Sign in</a>
+  </div>
+
+  <div id="su_msg" class="msg"></div>
+
+  <h3 style="margin-top:18px;">Debug: Users DB</h3>
+  <pre id="users_debug" style="background: rgba(0,0,0,0.06); padding: 10px; border-radius: 12px; overflow:auto;"></pre>
+</div>
+
+<script src="src/auth.js"></script>
+</body>
+</html>

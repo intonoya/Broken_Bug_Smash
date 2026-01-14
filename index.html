@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug Smash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Bug Smash</h1>
+    <p>Score: <span id="score">20</span></p>
+    <p>Time: <span id="time">90</span></p>
+    <button id="startGame">Oops</button>
+    
+    <div id="gameContainer">
+        <audio id="bgMusic" loop>
+            <source src="background.mp3" type="audio/mp3">
+        </audio>
+        <audio id="smashSound">
+            <source src="smash.mp3" type="audio/mp3">
+        </audio>
+        <audio id="endGameSound">
+            <source src="endgame.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script src="src/scripts.js"></script>
+</body>
+</html>
